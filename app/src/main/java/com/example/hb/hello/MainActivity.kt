@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
         info("Ceci est un info dans le onCreate")
         Log.i(this::class.java.simpleName, "Ceci est un Kotlin is an island")
 
-        myTextSuppl.text = "Texte supplémentaire modifié dans le onCreate"
+        myTextSuppl.text = "Texte supplémentaire PIF modifié dans le onCreate"
 
 //        btnOpenSecondActivity.setOnClickListener(
 //            toast("Clic ouvre fen2")
