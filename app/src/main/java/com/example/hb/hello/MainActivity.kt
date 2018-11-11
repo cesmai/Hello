@@ -15,11 +15,32 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
         info("Ceci est un info dans le onCreate")
         Log.i(this::class.java.simpleName, "Ceci est un Kotlin is an island")
 
+        // Change initial text
         myTextSuppl.text = "Texte supplémentaire PIF modifié dans le onCreate"
 
-//        btnOpenSecondActivity.setOnClickListener(
-//            toast("Clic ouvre fen2")
-//        )
+
+        // Display a dialog box
+//        alert("YO").show()
+
+//        alert("YO") {
+//            yesButton { toast("Yep") }
+//            noButton { }
+//        }.show()
+
+        // TODO tell Macha to replace neutralButton with neutralPressed
+        /*alert("YO") {
+            title = "Awesome quote"
+            positiveButton("Love") { toast("Yo") }
+            negativeButton("Not at all") { }
+            neutralPressed("May be") {}
+        }.show()*/
+
+
+        // Button to open a second Activity
+        btnOpenSecondActivity.setOnClickListener {
+            startActivity<SecondActivity>()
+//            startActivity<SecondActivity>("msgForSecond" to "tu es le 2") TODO how to get extra in SecondActivity ?
+        }
     }
 
     override fun onStart() {
@@ -52,21 +73,6 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
         super.onRestart()
 
         wtf("Ceci est un wtf dans le onRestart")
-
-//        alert("YO").show()
-
-//        alert("YO") {
-//            yesButton { toast("Yep") }
-//            noButton { }
-//        }.show()
-
-        alert("YO") {
-            title = "Awesome quote"
-            positiveButton("Love") { toast("Yo") }
-            negativeButton("Not at all") { }
-//            neutralButton("May be")
-        }.show()
-
     }
 
     override fun onDestroy() {
