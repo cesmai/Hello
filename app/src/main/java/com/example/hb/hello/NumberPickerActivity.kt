@@ -2,7 +2,7 @@ package com.example.hb.hello
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_number_picker.*
 import org.jetbrains.anko.*
 
 class NumberPickerActivity : AppCompatActivity(), AnkoLogger {
@@ -13,7 +13,7 @@ class NumberPickerActivity : AppCompatActivity(), AnkoLogger {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_number_picker)
 
-        // Number picker TODO voir comment ajouter un scroll
+        // Number picker TODO avec ajout du scroll
         numberPicker.minValue = 0
         numberPicker.maxValue = 7
     }
