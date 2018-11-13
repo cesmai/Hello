@@ -27,13 +27,14 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
 //            noButton { }
 //        }.show()
 
-        // TODO tell Macha to replace neutralButton with neutralPressed
-        /*alert("YO") {
-            title = "Awesome quote"
-            positiveButton("Love") { toast("Yo") }
-            negativeButton("Not at all") { }
-            neutralPressed("May be") {}
-        }.show()*/
+//        alert("YO") {
+//            title = "Awesome quote"
+//            positiveButton("Love") { toast("Yo") }
+//            negativeButton("Not at all") { }
+//            neutralPressed("May be") {}
+//        }.show()
+
+        toast(getString(R.string.text_onCreate))
 
 
         // Button to open a second Activity
@@ -42,6 +43,8 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
 //            startActivity<SecondActivity>("msgForSecond" to "tu es le 2") TODO how to get extra in SecondActivity ?
         }
     }
+
+
 
     override fun onStart() {
         super.onStart()
